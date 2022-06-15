@@ -25,7 +25,7 @@ public class BookController {
 
     @PostMapping
 // TODO add DTO
-    public CustomResponse<Book> add(Book book) {
+    public CustomResponse<Book> add(@RequestBody Book book) {
         return bookService.add(book);
     }
 }
